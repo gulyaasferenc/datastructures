@@ -20,15 +20,20 @@ void BinarySearchTreeNodeHandler::add(BinarySearchTreeNode *el)
             if (candidate->getLeft() == nullptr) {
                 candidate->setLeft(el);
                 found = true;
+            } else {
+                candidate = candidate->getLeft();
             }
-            candidate = candidate->getLeft();
+
         } else {
             if (candidate->getRight() == nullptr) {
                 candidate->setRight(el);
                 found = true;
+            } else {
+                candidate = candidate->getRight();
             }
-            candidate = candidate->getRight();
         }
+
+        el->setParent(candidate);
     }
 }
 

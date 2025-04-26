@@ -24,6 +24,8 @@ void binarySearchTreeTest() {
          << root->getRight()->getValue()
          << "; should be there: "
          << root->getRight()->getLeft()->getValue()
+         << "; parent should be 30: "
+         << root->getRight()->getLeft()->getParent()->getValue()
          << endl;
 }
 

@@ -1,6 +1,6 @@
 #include "binarysearchtreenode.h"
 
-BinarySearchTreeNode::BinarySearchTreeNode(int val): value(val), right(nullptr), left(nullptr)
+BinarySearchTreeNode::BinarySearchTreeNode(int val): value(val), right(nullptr), left(nullptr), parent(nullptr)
 {
 }
 
