@@ -4,16 +4,6 @@ BinarySearchTreeNode::BinarySearchTreeNode(int val): value(val), right(nullptr),
 {
 }
 
-int BinarySearchTreeNode::getKey() const
-{
-    return key;
-}
-
-void BinarySearchTreeNode::setKey(int newKey)
-{
-    key = newKey;
-}
-
 int BinarySearchTreeNode::getValue() const
 {
     return value;

@@ -10,8 +10,6 @@ class BinarySearchTreeNode
     BinarySearchTreeNode *parent;
 public:
     BinarySearchTreeNode(int value);
-    int getKey() const;
-    void setKey(int newKey);
     int getValue() const;
     void setValue(int newValue);
     BinarySearchTreeNode *getRight() const;
